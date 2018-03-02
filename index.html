@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Octos - Portifólio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/octopus2.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" charset="utf-8">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/animate.css/animate.min.css">
+    <link rel="stylesheet" href="lib/mdi/css/materialdesignicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="lib/chart.js/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="observe" id="header">
+            <div class="row presentation">
+                Seja bem-vindo a <span id="myName">Sistemas Octos</span>.<br> Veja as nossas soluções para aumentar suas vendas.
+            </div>
+            <div class="row">
+                <span class="scroll-btn col-sm-12 col-lg-12">
+                    <a href="#">
+                        <span class="mouse">
+                            <span>
+                            </span>
+                </span>
+                </a>
+                <p id="scrollme">Veja mais</p>
+                </span>
+            </div>
+        </div>
+        <div class="navMobile">
+            <div class="menuBars">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+       </div>
+        <ul class="menu col-lg-12" data-spy="affix" data-offset-top="615">
+            <li class="moveTo active-link" data-dest="header" id="headerMenu">HOME</li>
+            <li class="moveTo" data-dest="about" id="aboutMenu">SOBRE</li>
+            <li class="moveTo" data-dest="vantagens" id="vantagensMenu">VANTAGENS</li>
+            <li class="moveTo" data-dest="contato" id="contatoMenu">CONTATO</li>
+        </ul>
+        <div class="observe painel col-lg-12" id="about">
+            <div class="row">
+                <div class="alignCenter">
+                    <div class="titleSection topReveal">Sobre</div>
+                </div>
+                <div class="leftGroup col-sm-9 col-lg-9">
+                    <div class="sectionDesc" id="empresaDesc">Com os sistemas Octos você poderá deslanchar seu negócio de forma online e atingir um maior número de clientes. Receba pedidos online de forma rápida e segura.</div>
+                </div>
+                <div class="rightGroup col-sm-3">
+                    <div class="col-sm-12 col-lg-8 col-lg-offset-2 rightReveal" id="octopus">
+                        <img src="img/octopus2.png" alt="Foto" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="observe painel col-lg-12" id="vantagens">
+           <div class="alignCenter">
+                    <div class="titleSection topReveal">VANTAGENS</div>
+                </div>
+            <div class="hex-wrap col-sm-12 col-lg-12 totalGroup">
+                    <div class="lblHex col-sm-2 col-lg-2">
+                        <div class="hexagon">
+                            <i class="mdi mdi-speedometer"></i>
+                        </div>
+                        <div class="lblHexTitle">Velocidade</div>
+                        <div class="lblHexBody">Páginas de carregamento rápido e com baixo uso de dados móveis.</div>
+                    </div>
+                    <div class="lblHex col-sm-2 col-lg-2 col-sm-offset-1">
+                        <div class="hexagon">
+                            <i class="mdi mdi-responsive"></i>
+                        </div>
+                        <div class="lblHexTitle">Responsividade</div>
+                        <div class="lblHexBody">Páginas de carregamento rápido e com baixo uso de dados móveis.</div>
+                    </div>
+                    <div class="lblHex col-sm-2 col-lg-2 col-sm-offset-1">
+                        <div class="hexagon">
+                            <i class="mdi mdi-lightbulb-outline"></i>
+                        </div>
+                        <div class="lblHexTitle">Intuitivo</div>
+                        <div class="lblHexBody">Páginas de carregamento rápido e com baixo uso de dados móveis.</div>
+                    </div>
+                    <div class="lblHex col-sm-2 col-lg-2 col-sm-offset-1">
+                        <div class="hexagon">
+                            <i class="mdi mdi-rocket"></i>
+                        </div>
+                        <div class="lblHexTitle">Dinâmico</div>
+                        <div class="lblHexBody">Páginas de carregamento rápido e com baixo uso de dados móveis.</div>
+                    </div>
+                </div>
+                <div class="alignCenter wrap-tBody col-sm-12 col-lg-12">
+                    <div class="titleBody leftReveal">Aumente suas vendas <i class="mdi mdi-finance"></i></div>
+                    <div class="ltlUnderline leftReveal"></div>
+                </div>
+                <div class="chartContainer col-sm-12 col-lg-12" style="margin-top: 35px">
+                    <canvas id="lineChartPinkOrange" width="500px" height="300px"></canvas>
+                </div>
+                <div class="totalGroup vantagens col-sm-12">
+                    <div class="alignCenter wrap-tBody col-sm-12 col-lg-12">
+                        <div class="titleBody leftReveal">Outras vantagens <i class="mdi mdi-heart" style="color: #e35d5b"></i></div>
+                        <div class="ltlUnderline leftReveal"></div>
+                    </div>
+                    <div class="sectionDesc"><i class="mdi mdi-marker-check checkListIcon"></i>Mais comodidade para os seus clientes</div>
+                    <div class="sectionDesc"><i class="mdi mdi-marker-check checkListIcon"></i>Receba mais pedidos</div>
+                    <div class="sectionDesc"><i class="mdi mdi-marker-check checkListIcon"></i>Mostre fotos de seus produtos</div>
+                    <div class="sectionDesc"><i class="mdi mdi-marker-check checkListIcon"></i>Maior praticidade no processamento e organização de pedidos</div>
+                    <div class="sectionDesc"><i class="mdi mdi-marker-check checkListIcon"></i>Facilidade de monitoração de desempenho</div>
+                    <div class="sectionDesc"><i class="mdi mdi-marker-check checkListIcon"></i>Maior visibilidade dos produtos</div>
+                    <div class="sectionDesc"><i class="mdi mdi-marker-check checkListIcon"></i>Calculo automático da taxa de frete (se existente) baseado no endereço do cliente</div>
+                    <div class="sectionDesc"><i class="mdi mdi-marker-check checkListIcon"></i>Facilidade na implantação de ações promocionais</div>
+                    
+                    <div class="alignCenter wrap-tBody col-sm-12 col-lg-12">
+                        <div class="titleBody leftReveal">Preço <i class="mdi mdi-cash" style="color: #27ae60"></i></div>
+                        <div class="ltlUnderline leftReveal"></div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-lg-12 preco">
+                        <div class="precoBtn bold">Tudo isso por apenas: R$ 130,00 por mês</div>
+                    </div>
+                    <div class="sectionDesc alignCenter"><i class="mdi mdi-star" style="color: #f39c12"></i>Pague a primeira mensalidade apenas quando seu sistema estiver funcionando.</div>
+                </div>
+        </div>
+        <div class="observe col-lg-12" id="contato">
+            <div class="alignCenter">
+                <span class="seta-baixo"></span>
+                <div class="alignCenter">
+                    <div class="titleSection topReveal">Contato</div>
+                </div>
+                <div class="row">
+                    <form class="col-sm-6 col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4" id="contact-form" autocomplete="off">
+                        <input placeholder="Nome" type="text" name="name" required="" class="contatoInput" id="nomeForm">
+                        <input placeholder="Seu e-mail" type="email" name="email" required="" class="contatoInput" id="emailForm">
+                        <textarea placeholder="Sua Mensagem" type="text" name="message" class="contatoInput" rows="6" id="msgForm"></textarea>
+                        <div id="success">
+                           <span id="closeSuccess" class="mdi mdi-close-circle"></span>
+                            <div style="margin: 10px; margin-right: 25px">Sua mensagem foi enviada com sucesso. Entraremos em contato o mais rápido possível. Obrigado.</div>
+                        </div>
+                        <input class="button" type="submit" id="submit" value="ENVIAR">
+                    </form>
+                    <div class="contactMe bottomReveal col-lg-10 col-lg-offset-1">
+                        <i class="mdi mdi-email"></i> sistemasoctos@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="lib/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

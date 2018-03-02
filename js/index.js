@@ -111,9 +111,11 @@ $(document).ready(function () {
     })(navigator.userAgent || navigator.vendor || window.opera);
 
     if (jQuery.browser.mobile) {
-        $(".menu").removeAttr("data-spy");
-        $(".menu").removeAttr("data-offset-top");
-        $(".navMobile").css("display", "block");
+        if($( window ).width()<=750){
+            $(".menu").removeAttr("data-spy");
+            $(".menu").removeAttr("data-offset-top");
+            $(".navMobile").css("display", "block");   
+        }
     }
 
     $('#contact-form').submit(function (e) {

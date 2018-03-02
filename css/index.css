@@ -492,19 +492,6 @@ a {
     background-color: rgba(255,255,255,0.3);    
 }
 
-.contactMe {
-    font-size: 60px;
-    border: none;
-    color: white;
-    font-family: "Lato", sans-serif;
-    border-bottom: 5px solid rgba(255, 255, 255, .6);
-    padding: 5px 15px;
-}
-
-.fa-envelope {
-    margin-right: 40px;
-}
-
 .navMobile {
     display: none;
     position: fixed;
@@ -549,20 +536,59 @@ a {
 }
 
 @media(max-width: 950px) {
-    #profile {
-        margin-top: 40px;
+    .moveTo {
+        padding: 8px 40px 8px 15px;
+        margin: 0px !important;
     }
-    .contactMe {
-        word-wrap: break-word;
-        font-size: 50px;
-        padding: 0px;
-        width: 100%;
-        text-align: center;
+    #header {
+        height: calc(100vh + 45px);
     }
     .presentation {
-        font-size: 80px;
-        top: 100px;
-        padding: 0px 15px;
+        font-size: 45px;
+        top: 30vh;
+        padding: 0px 20px;
+    }
+    .scroll-btn {
+        margin-top: 40vh;
+    }
+    #about {
+        word-wrap: break-word;
+        padding-right: 30px;
+        padding-left: 0px;
+    }
+    .sectionDesc:nth-child(n+2) {
+        margin-top: 25px;
+    }
+    .sectionDesc {
+        margin-left: 15px;
+        margin-top: 25px;
+        text-align: left;
+    }
+    .lblHex:nth-child(n+2){
+        margin-top: 50px;
+    }
+    #octopus{
+        display: none;
+    }
+    .ltlUnderline{
+        width: 30%;
+        left: 35%;
+    }
+    .preco{
+        font-size: 25px;
+    }
+    .precoBtn{
+        width: 100%;
+        left: 0px;
+    }
+    iframe{
+        width: 80% !important;
+    }
+    .navMobile{
+        display: none !important;
+    }
+    .lblHexBody{
+        font-size: 23px;
     }
 }
 
@@ -601,9 +627,9 @@ a {
         height: calc(100vh + 45px);
     }
     .presentation {
-        font-size: 50px;
+        font-size: 45px;
         top: 100px;
-        padding: 0px 15px;
+        padding: 0px 20px;
     }
     .scroll-btn {
         margin-top: 20vh;
@@ -616,26 +642,29 @@ a {
     .sectionDesc:nth-child(n+2) {
         margin-top: 25px;
     }
-    #codeIcon {
-        display: none;
-    }
-    #profile {
-        margin-top: 40px;
-        margin-left: 30px;
-    }
     .sectionDesc {
         margin-left: 15px;
         margin-top: 25px;
         text-align: left;
     }
-    .contactMe {
-        word-wrap: break-word;
-        font-size: 28px;
-        padding: 0px;
-        width: 100%;
-        text-align: center;
+    .lblHex:nth-child(n+2){
+        margin-top: 50px;
     }
-    .mdi-email {
+    #octopus{
         display: none;
+    }
+    .ltlUnderline{
+        width: 30%;
+        left: 35%;
+    }
+    .preco{
+        font-size: 25px;
+    }
+    .precoBtn{
+        width: 100%;
+        left: 0px;
+    }
+    iframe{
+        width: 100% !important;
     }
 }
